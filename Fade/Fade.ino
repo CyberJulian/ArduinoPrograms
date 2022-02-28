@@ -19,7 +19,6 @@
 int led = 9;           // the PWM pin the LED is attached to
 int brightness = 0;    // how bright the LED is
 int fadeAmount = 5;    // how many points to fade the LED by
-
 int aled = 6;           // the PWM pin the LED is attached to
 
 // the setup routine runs once when you press reset:
@@ -34,7 +33,7 @@ void setup() {
 void loop() {
   // set the brightness of pin 9:
   analogWrite(led, brightness);
-// set the brightness of pin 9:
+// set the brightness of pin 6:
   analogWrite(aled, brightness);
 
   // change the brightness for next time through the loop:
